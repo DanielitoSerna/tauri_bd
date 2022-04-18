@@ -1,4 +1,4 @@
-create table biblioteca (
+create table taurischema.biblioteca (
 	id serial not null,
 	nombre character varying (100) not null,
 	categoria character varying (100) not null,
@@ -9,9 +9,9 @@ create table biblioteca (
 	fdn float null, 
 	pb float null,
 	almidon float null,
-	fraccion_a integer null,
-	fraccion_b integer null,
-	fraccion_c integer null,
+	fraccion_a float null,
+	fraccion_b float null,
+	fraccion_c float null,
 	digestabilidad_pndr float null,
 	kd_fraccion_b float null,
 	pndr float null,
