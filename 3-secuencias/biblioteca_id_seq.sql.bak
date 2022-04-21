@@ -1,0 +1,9 @@
+CREATE SEQUENCE IF NOT EXISTS taurischema.biblioteca_id_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 999999999
+    CACHE 1;
+
+ALTER SEQUENCE taurischema.biblioteca_id_seq
+    OWNER TO usertauri;

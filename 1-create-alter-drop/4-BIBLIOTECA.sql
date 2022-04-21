@@ -1,34 +1,44 @@
-create table taurischema.biblioteca (
-	id serial not null,
-	nombre character varying (100) not null,
-	categoria character varying (100) not null,
-	tipo character varying (50) not null,
-	ms float null,
-	ed float null,
-	fda float null, 
-	fdn float null, 
-	pb float null,
-	almidon float null,
-	fraccion_a float null,
-	fraccion_b float null,
-	fraccion_c float null,
-	digestabilidad_pndr float null,
-	kd_fraccion_b float null,
-	pndr float null,
-	grasa_cruda float null,
-	cenizas float null,
-	porcentaje_ca float null,
-	porcentaje_p float null,
-	porcentaje_na float null,
-	porcentaje_cl float null,
-	porcentaje_k float null,
-	porcentaje_mg float null,
-	porcentaje_s float null,
-	coeficiente_absorcion_ca float null,
-	coeficiente_absorcion_p float null,
-	coeficiente_absorcion_na float null,
-	coeficiente_absorcion_cl float null,
-	coeficiente_absorcion_k float null,
-	usuario character varying (100) not null,
-	primary key (id)
-);
+-- Table: taurischema.biblioteca
+
+-- DROP TABLE IF EXISTS taurischema.biblioteca;
+
+CREATE TABLE IF NOT EXISTS taurischema.biblioteca
+(
+    id integer NOT NULL DEFAULT nextval('taurischema.biblioteca_id_seq'::regclass),
+    nombre character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    categoria character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    tipo character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    ms double precision,
+    ed double precision,
+    fda double precision,
+    fdn double precision,
+    pb double precision,
+    almidon double precision,
+    fraccion_a double precision,
+    fraccion_b double precision,
+    fraccion_c double precision,
+    digestabilidad_pndr double precision,
+    kd_fraccion_b double precision,
+    pndr double precision,
+    grasa_cruda double precision,
+    cenizas double precision,
+    porcentaje_ca double precision,
+    porcentaje_p double precision,
+    porcentaje_na double precision,
+    porcentaje_cl double precision,
+    porcentaje_k double precision,
+    porcentaje_mg double precision,
+    porcentaje_s double precision,
+    coeficiente_absorcion_ca double precision,
+    coeficiente_absorcion_p double precision,
+    coeficiente_absorcion_na double precision,
+    coeficiente_absorcion_cl double precision,
+    coeficiente_absorcion_k double precision,
+    usuario character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT biblioteca_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS taurischema.biblioteca
+    OWNER to usertauri;
