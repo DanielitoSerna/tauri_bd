@@ -25,6 +25,8 @@ CREATE TABLE IF NOT EXISTS taurischema.entrada
     distancia double precision,
     numero_viajes double precision,
     tipografia character varying(100) COLLATE pg_catalog."default",
+	usuario character varying(100) COLLATE pg_catalog."default" NOT NULL,
+	fecha_creacion timestamp,
     CONSTRAINT entrada_pkey PRIMARY KEY (id),
     CONSTRAINT departamento_fkey FOREIGN KEY (departamento)
         REFERENCES taurischema.departamento (codigo) MATCH SIMPLE
