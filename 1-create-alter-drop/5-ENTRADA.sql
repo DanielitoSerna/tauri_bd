@@ -17,6 +17,7 @@ CREATE TABLE IF NOT EXISTS taurischema.entrada
     dias_prenez double precision NOT NULL,
     numero_partos integer NOT NULL,
     intervalo_partos integer NOT NULL,
+	produccion_leche double precision NOT NULL,
     grasa double precision NOT NULL,
     proteina_cruda double precision NOT NULL,
     lactosa double precision NOT NULL,
