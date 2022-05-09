@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS taurischema.entrada
     raza character varying(100) COLLATE pg_catalog."default" NOT NULL,
     tipo_animal character varying(100) COLLATE pg_catalog."default" NOT NULL,
     peso_corporal double precision NOT NULL,
+	ganancia_peso double precision NOT NULL,
     condicion_corporal double precision NOT NULL,
     dias_leche double precision NOT NULL,
     dias_prenez double precision NOT NULL,
