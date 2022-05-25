@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS taurischema.biblioteca
     coeficiente_absorcion_na double precision,
     coeficiente_absorcion_cl double precision,
     coeficiente_absorcion_k double precision,
+	coeficiente_absorcion_mg double precision,
     usuario character varying(100) COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT biblioteca_pkey PRIMARY KEY (id)
 )
