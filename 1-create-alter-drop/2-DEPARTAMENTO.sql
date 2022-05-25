@@ -11,5 +11,9 @@ CREATE TABLE IF NOT EXISTS taurischema.departamento
 
 TABLESPACE pg_default;
 
-ALTER TABLE IF EXISTS taurischema.departamento
-    OWNER to usertauri;
+ALTER TABLE IF EXISTS taurischema.departamento OWNER to usertauri;
+    
+    
+ALTER TABLE taurischema.departamento ADD pais integer;
+ALTER TABLE taurischema.departamento ADD FOREIGN KEY (pais) REFERENCES taurischema.pais(codigo);
+

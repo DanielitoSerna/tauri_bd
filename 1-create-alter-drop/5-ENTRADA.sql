@@ -42,3 +42,6 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS taurischema.entrada
     OWNER to usertauri;
+    
+    
+alter table taurischema.entrada drop column pais;
